@@ -23,21 +23,21 @@ QUOTA = int(os.getenv("QUOTA", 10 * 1024 * 1024 * 1024))  # 10G
 if os.uname().sysname == "Darwin":
     QUOTA = 10 * 1024 * 1024  # 10M
 
-TG_MAX_SIZE = 2 * 1024 * 1024 * 1024 * 0.99
-# TG_MAX_SIZE = 10 * 1024 * 1024
+TG_MAX_SIZE = 4 * 1024 * 1024 * 1024 * 0.99
+# TG_MAX_SIZE = 10 * 1024 * 1024 * 1024 * 1024
 
 EX = os.getenv("EX", 24 * 3600)
 MULTIPLY = os.getenv("MULTIPLY", 5)  # VIP1 is 5*5-25G, VIP2 is 50G
 USD2CNY = os.getenv("USD2CNY", 6)  # $5 --> ¥30
 
-ENABLE_VIP = os.getenv("VIP", False)
-MAX_DURATION = int(os.getenv("MAX_DURATION", 60))
+ENABLE_VIP = os.getenv("VIP", True)
+MAX_DURATION = int(os.getenv("MAX_DURATION", 30))
 AFD_LINK = os.getenv("AFD_LINK", "https://afdian.net/@BennyThink")
-COFFEE_LINK = os.getenv("COFFEE_LINK", "https://www.buymeacoffee.com/bennythink")
+COFFEE_LINK = os.getenv("COFFEE_LINK", "https://www.buymeacoffee.com/FilmyFather")
 COFFEE_TOKEN = os.getenv("COFFEE_TOKEN")
 AFD_TOKEN = os.getenv("AFD_TOKEN")
 AFD_USER_ID = os.getenv("AFD_USER_ID")
-OWNER = os.getenv("OWNER", "BennyThink")
+OWNER = os.getenv("OWNER", "Yuvraj")
 
 # limitation settings
 AUTHORIZED_USER: "str" = os.getenv("AUTHORIZED_USER", "")
@@ -57,4 +57,4 @@ AUDIO_FORMAT = os.getenv("AUDIO_FORMAT")
 ARCHIVE_ID = os.getenv("ARCHIVE_ID")
 
 IPv6 = os.getenv("IPv6", False)
-ENABLE_FFMPEG = os.getenv("ENABLE_FFMPEG", False)
+ENABLE_FFMPEG = os.getenv("ENABLE_FFMPEG", True)
