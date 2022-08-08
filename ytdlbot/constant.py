@@ -35,7 +35,7 @@ every one can use this bot within **{sizeof_fmt(QUOTA)} of quota for every {int(
 5. Source code for this bot will always stay open, here-> https://github.com/tgbot-collection/ytdlbot
     """ if ENABLE_VIP else "Help text"
 
-    about = "YouTube-DL by @BennyThink. Open source on GitHub: https://github.com/tgbot-collection/ytdlbot"
+    about = "YouTube-DL by @Yuvi_4502. Open source on GitHub: https://github.com/FilmyFather/ytdlbot"
 
     terms = f"""
 1. You can use this service, free of charge, {sizeof_fmt(QUOTA)} per {int(EX / 3600)} hours.
@@ -77,7 +77,7 @@ __I live in a place where I don't have access to Telegram Payments. So...__
 1. afdian: with your order number `/vip 123456`
 2. buy me a coffee: with your email `/vip someone@else.com`
     """ if ENABLE_VIP else "VIP is not enabled."
-    vip_pay = "Processing your payments...If it's not responding after one minute, please contact @BennyThink."
+    vip_pay = "Processing your payments...If it's not responding after one minute, please contact @yuvi_4502."
 
     private = "This bot is for private use"
     membership_require = f"You need to join this group or channel to use this bot\n\nhttps://t.me/{REQUIRED_MEMBERSHIP}"
